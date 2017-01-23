@@ -1,0 +1,34 @@
+FEPW (Front End Personal Website)
+
+Criteria:
+- Design & Creativity -> 1 - 10
+- Code and Tech (Front End Reviewer Only) -> 1 - 10
+
+Judges: 
+- All Front Dev
+- All Designer
+
+Technical Detail:
+- Build your own original personal website, at least consists of:
+    - Home
+    - About
+    - Portfolio
+- Host it using Github Pages  Read the detail right here: https://pages.github.com/
+- Vanilla JS only Library such as three.js (https://threejs.org/) is allowed
+- Last submission will be at 31 January 2017
+
+Reward:
+- TBA
+	
+======================================================================================================================================================================
+
+HALAMAN
+- Home
+	+ About
+- Portofolio
+- CV
+
+FEATURED
+- Bisa download cv
+- Bisa liat Portofolio
+
