@@ -1,0 +1,12 @@
+.haha .hoho {
+  display: inline-block;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  color: green;
+}
+
+.haha .hai {
+  color: red;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImdsb2JhbC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBRUUsc0JBQXNCO0VBQ3RCLDhCQUFlO1VBQWYsc0JBQWU7RUFDZixhQUFZO0NBQ1o7O0FBTEY7RUFPRSxXQUFVO0NBQ1YiLCJmaWxlIjoiZ2xvYmFsLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIEFic3RyYWN0IChNaXhpbiwgRnVuY3Rpb24sIFZhcmlhYmxlcylcclxuLmhhaGF7XHJcblx0LmhvaG97XHJcblx0XHRkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcblx0XHR0cmFuc2Zvcm06c2NhbGUoMS44KTtcclxuXHRcdGNvbG9yOmdyZWVuO1xyXG5cdH1cclxuXHQuaGFpe1xyXG5cdFx0Y29sb3I6cmVkO1xyXG5cdH1cclxufSJdfQ== */
