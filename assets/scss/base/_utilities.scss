@@ -1,0 +1,405 @@
+/* global utilities */
+
+//
+// Utility classes
+// --------------------------------------------------
+*{
+  font-family: "Raleway";
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #f2f2f2;
+}
+
+
+// Container
+// ------------------------
+.container{
+  width: 100%;
+  max-width: 1080px; 
+  margin: 0 auto;
+}
+
+// Width
+// ------------------------
+
+.w-10{
+    width: 10%;
+    display: inline-block;
+}
+
+.w-20{
+    width: 20%;
+    display: inline-block;
+}
+
+.w-quad{
+    width: 25%;
+    display: inline-block;
+}
+
+.w-30{
+    width: 30%;
+    display: inline-block;
+}
+
+.w-trio{
+    width: 33.33%;
+    display: inline-block;
+}
+
+.w-40{
+    width: 40%;
+    display: inline-block;
+}
+
+.w-half{
+    width: 50%;
+    display: inline-block;
+}
+
+.w-60{
+    width: 60%;
+    display: inline-block;
+}
+
+.w-70{
+    width: 70%;
+    display: inline-block;
+}
+
+.w-triquad{
+    width: 75%;
+    display: inline-block;
+}
+
+.w-80{
+    width: 80%;
+    display: inline-block;
+}
+
+.w-90{
+    width: 90%;
+    display: inline-block;
+}
+
+.w-full{
+  width: 100%;
+}
+
+// Max Width
+.mxw-320{
+  max-width: 320px;
+}
+.mxw-768{
+  max-width: 768px;
+}
+.mxw-992{
+  max-width: 992px;
+}
+
+// Margins & Paddings
+// -------------------------
+.m0{
+    margin: 0;
+}
+.p0{
+  padding: 0;
+}
+
+.m8-b{
+  margin-bottom: 8px;
+}
+.m16-b{
+  margin-bottom: 16px;
+}
+.m24-b{
+  margin-bottom: 24px;
+}
+.m32-b{
+  margin-bottom: 32px;
+}
+.m40-b{
+  margin-bottom: 40px;
+}
+.m48-b{
+  margin-bottom: 48px;
+}
+.m56-b{
+  margin-bottom: 56px;
+}
+
+.m-auto{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.p8-lrtb{
+  padding-left:8px; 
+  padding-right:8px; 
+  padding-top:8px; 
+  padding-bottom:8px; 
+}
+.p8-lr{
+  padding-left:8px; 
+  padding-right:8px;  
+}
+.p8-l{
+  padding-left:8px; 
+}
+.p8-r{
+  padding-right:8px; 
+}
+.p8-tb{
+  padding-top:8px; 
+  padding-bottom:8px; 
+}
+.p16-lr{
+  padding-left:16px; 
+  padding-right:16px; 
+}
+.p16-tb{
+  padding-top:16px; 
+  padding-bottom:16px; 
+}
+.p24-tb{
+  padding-top:24px; 
+  padding-bottom:24px; 
+}
+.p32-tb{
+  padding-top:32px; 
+  padding-bottom:32px; 
+}
+.p40-tb{
+  padding-top:40px; 
+  padding-bottom:40px; 
+}
+.p48-tb{
+  padding-top:48px; 
+  padding-bottom:48px; 
+}
+
+
+
+// Border
+// -------------------------
+.no-border{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+// Heading
+// -------------------------
+h1, h2{
+  margin: 0;
+}
+h1{
+  font-size: 40px;
+}
+
+.fs-20{
+  font-size: 20px;
+}
+.fs-30{
+  font-size: 30px;
+}
+.fs-50{
+  font-size: 50px;
+}
+
+.xlt{
+  font-size: 20px;
+}
+.lt{
+  font-size: 18px;
+}
+.mt{
+  font-size: 16px;
+}
+.bt{
+  font-size: 14px;
+}
+.st{
+  font-size: 12px;
+}
+.xst{
+  font-size: 11px;
+}
+
+// Floats
+// -------------------------
+
+.row {
+  &:before{
+    content: "";
+    display: table;
+  }
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+
+.text-left {
+  text-align: left; 
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-light{
+  font-weight:300; 
+}
+.text-normal{
+  font-weight:400; 
+}
+.text-bold{
+  font-weight:700; 
+}
+.text-extrabold{
+  font-weight:900; 
+}
+
+// Background Color
+// -------------------------
+.bg-white{
+  background-color: #fff;
+}
+.bg-lightgrey{
+  background-color: #f2f2f2;
+}
+.bg-grey{
+  background-color: #ddd;
+}
+.bg-dark{
+  background-color: #444;
+}
+.bg-image{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hideit{
+  display: none;
+}
+.showit{
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+// Fonts
+// -------------------------
+.bold{
+    font-weight: bold;
+}
+
+.f-kepler{
+  font-family: "kepler-std-display";
+}
+
+// button
+a{
+  outline: none;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+button{
+  border:0px;
+}
+
+// Position
+.pos-relative{
+  position: relative;
+}
+.pos-absolute{
+  position: absolute;
+}
+.pos-fixed{
+  position: fixed;
+}
+
+// Line
+hr{
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+// ul li
+ul{
+  li{
+    list-style: none;
+  }
+}
+
+// Display
+.display-b{
+  display: block;  
+}
+.display-ib{
+  display: inline-block;  
+}
+
+// Scroll Custom
+.custom-scroll{
+    &::-webkit-scrollbar {
+        width: 3px;
+        cursor:pointer;
+    }
+     
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    }
+     
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0,0,0, 0.2);
+      outline: 1px solid #444;
+    } 
+}
+
+.bgpos-l{background-position: left;}
+.bgpos-r{background-position: right;}
+.bgpos-c{background-position: center;}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* customized utilities */

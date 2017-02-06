@@ -1,0 +1,55 @@
+*{
+	font-family: 'Roboto';
+}
+// Begin - Home
+.hero-menu{
+	.hero-item{
+		display: block;
+		width: 25%;
+		float: left;
+		height: 100vh;
+		position: relative;
+		overflow: hidden;
+		.bg-hero{
+			width: 100%;
+			height: 100%;
+			display: block;
+			@include background-image;
+			transition:.8s;
+		}
+		&:after{
+			content: "";
+			display: block;
+			@include absolute-zero;
+			background: #1c8c47; 
+			background: -moz-linear-gradient(top,  #1c8c47 0%, #13bf00 100%);
+			background: -webkit-linear-gradient(top,  #1c8c47 0%,#13bf00 100%);
+			background: linear-gradient(to bottom,  #1c8c47 0%,#13bf00 100%); 
+			opacity: 0.5;
+			transition:.8s;
+		}
+		.hero-content{
+			position: absolute;
+			z-index: 10;
+			left: 20px;
+			bottom:100px;
+			.title{
+				font-size: 32px;
+				color: #fff;
+				font-weight: 900;
+			}
+		}
+		&:hover{
+			&:after{
+				opacity: 0;
+				transition:.8s;
+			}
+			.bg-hero{
+				transition:.8s;
+				transform: scale(0.98);
+			}
+		}
+	}
+}
+
+// End - Home

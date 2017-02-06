@@ -1,0 +1,96 @@
+// overlay
+@mixin overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 20;
+}
+
+@mixin overlay-fix{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0,0,0, 0.8);
+    padding-bottom: 50px;
+}
+
+// Position Absolute Center
+@mixin box-center{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	-ms-transform:translate(-50%, -50%);
+	-webkit-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+}
+@mixin box-center-V{
+	position: absolute;
+	top:50%;
+	left: 0;
+	-ms-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+@mixin box-center-H{
+	position: absolute;
+	top:0;
+	left:50%;
+	-ms-transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%);
+}
+
+// Position Zero
+@mixin absolute-zero{
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+@mixin fixed-zero{
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+// Responsive height
+@mixin responsive-height($height){
+	width: 100%;
+	.inner-image{
+		position: relative;
+		.image{
+			position: absolute;
+			top:0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		&:after{
+			content: "";
+			display: block;
+			padding-top: $height;
+		}
+	}
+}
+
+// Background Image
+@mixin background-image{
+	background-size: cover;
+	background-repeat: no-repeat; 
+}
