@@ -30,8 +30,20 @@ http://bergluft.hervis.at/chapter/1
 HALAMAN
 - Home
 	+ About
-- Portofolio
-- CV
+		++ Story about me
+		++ What i do
+		++ What can i do
+		++ My Interest
+	+ Portofolio
+		++ Sweetescape
+		++ Solmitra
+		++ Oper2an
+	+ Websume
+		++ My Short Info
+		++ My Carrier
+		++ My Academic
+		++ My Abilities
+		++ Download CV
 
 FEATURED
 - Bisa download cv
